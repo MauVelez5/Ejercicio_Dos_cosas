@@ -24,9 +24,12 @@ with st.expander('Analizar texto'):
         if x >= 0.5:
             st.write( 'Es un sentimiento Positivo 😊')
             image = Image.open('Smile.png')
+            st.image(image)
         elif x <= -0.5:
             st.write( 'Es un sentimiento Negativo 😔')
             image = Image.open('Negativo.jpg')
+            st.image(image)
         else:
             st.write( 'Es un sentimiento Neutral 😐')
             image = Image.open('Neutral.jpg')
+            st.image(image)
